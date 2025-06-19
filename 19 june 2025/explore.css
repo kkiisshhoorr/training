@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+}
+
+body {
+
+    padding: 0;
+    font-family: Arial;
+}
+
+header {
+    background-image: url("https://th.bing.com/th/id/R.ea9d765ee24f2b0c6f0df31341c3fe38?rik=YoAGKZibPtk9GA&riu=http%3a%2f%2fmedia.istockphoto.com%2fphotos%2froad-trip-driving-through-canadian-rockies-mountains-banff-national-picture-id517816237%3fk%3d6%26m%3d517816237%26s%3d612x612%26w%3d0%26h%3dYVtb_7Ya80hYXUp-RnEzHz4OLOB3YTNKScWJ-XO2xiw%3d&ehk=tfBagggaeydUf9TMzy4anAou2lyF2%2fvnkL2AKtYOcFM%3d&risl=&pid=ImgRaw&r=0");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+
+    color: #170e0e;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 10px solid rgb(1, 0,1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0px 15px;
+}
+
+nav ul li a {
+    color: green;
+}
+
+.fil{
+    padding: 20px;
+    background-color: #e70909;
+    overflow: auto;
+}
+
+.destination names{
+    padding: 20px;
+}
+
+.choice {
+    box-shadow: 2px 2px 8px red;
+    background-color: rgb(0, 140, 255);
+    margin: 15px;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.3s ease;
+
+}
+
+.choice:hover {
+    transform: scale(1.50)
+}
+.choice::after {
+    content: "cool deal";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(81, 0, 255);
+    color: #e2d8d8;
+    padding: 2px 6px;
+    font: 0.5em;
+    z-index: 2;
+}
+
+.forms form {
+    background-color: red;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #0f964c;
+    border-radius: 50px;
+}
+
+
+
