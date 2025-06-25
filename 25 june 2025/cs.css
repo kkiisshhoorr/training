@@ -1,0 +1,32 @@
+body{
+    background-image: url("https://content.thriveglobal.com/wp-content/uploads/2019/02/yoga1.jpg");
+    background-size: cover;
+}
+#sec{
+    display: grid;
+    grid-template-columns: auto;
+}
+#inp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    text-align: start;
+    padding: 0;
+
+}
+li{
+    width: 90%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+    background-color: blanchedalmond;
+    margin: 10px;
+}
+#but{
+    background-color: blueviolet;
+    color: aliceblue;
+}
