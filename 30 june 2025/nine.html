@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+        
+</head>
+<body>
+    <style>
+            .slider img{display: none;width: 400px;
+              .slider img:first-child{
+                display: block;
+              }  
+            }
+        </style>
+   
+    <div class="slider">
+        <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg">
+        <img src="https://images.pexels.com/photos/556416/pexels-photo-556416.jpeg?cs=srgb&dl=landscape-mountains-nature-556416.jpg&fm=jpg">
+        <img src="https://images.pexels.com/photos/1188083/pexels-photo-1188083.png?cs=srgb&dl=sea-dawn-nature-1188083.jpg&fm=jpg">
+    </div>
+    <button id="next">next</button>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        let index=0
+        const images=$(".slider img")
+        $("#next").click(function(){
+            images.eq(index).hide()
+            index=(index+1)%images.length
+            images.eq(index).show()
+        })
+    </script>
+
+    
+</body>
+</html>

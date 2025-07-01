@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <style>
+            .darkModee{
+                background-color: black;
+                color: white;
+            }
+        </style>
+
+</head>
+<body class="darkMode">
+    <h1 id ="welcome">welcome to u</h1>
+    <button id="btn" >click me</button>
+    <p id="para" style="display: none;">hi this is engineersmind</p>
+    <label for="name"></label>
+    <input id="inp" type="text">
+    <h3 id="out"></h3>
+    <h1 id ="heading">welcome</h1>
+    <figure>
+        <img src="https://tse1.mm.bing.net/th/id/OIP.i4gn7MbTOHqpWaaTcenevgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" id="image" width="20px" height="20px">
+    </figure>
+    <script>
+             // background color
+            $("#btn").on("click",
+                function(){
+                $("body").toggleClass("darkModee")
+            }
+        
+            )
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1 id ="welcome">welcome to u</h1>
+    <button id="btn" >click me</button>
+    <p id="para" style="display: none;">hi this is engineersmind</p>
+    <label for="name"></label>
+    <input id="inp" type="text">
+    <h3 id="out"></h3>
+    <h1 id ="heading">welcome</h1>
+    
+    <script>
+         //live counting of characters
+            $("#inp").on("input", function() {
+                let count = $(this).val().length;
+                $("#out").text(count);
+             });
+
+    </script>
+
+
+    
+</body>
+</html>

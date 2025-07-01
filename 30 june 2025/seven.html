@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <button id="but">click me</button>
+    <h2 style="color: aqua;background-color: rgb(228, 143, 16);height: 80px;width: 80px;" id="one">hello</h2>
+        <h2 style="color: aqua;background-color: rgb(228, 143, 16);height: 80px;width: 80px;" id="two">hello</h2>
+
+            <h2 style="color: aqua;background-color: rgb(228, 143, 16);height: 80px;width: 80px;" id="three">hello</h2>
+
+    <script>
+        $("#but").click(function(){
+            $("#one,#two,#three").fadeToggle()
+
+        })
+
+
+    </script>
+    
+</body>
+</html>

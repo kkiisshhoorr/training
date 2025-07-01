@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 1590px;">scroll down</div>
+    <button id="topbtn" style="position: fixed;bottom: 20px;
+    right: 30px;display: none;">top-scroll</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function(){
+            if ($(this).scrollTop()>300){
+                $("#topbtn").fadeIn()
+            }
+            else{
+                $("#topbtn").fadeOut()
+            }
+        })
+
+        $("#topbtn").click(function(){
+        $("html, body").animate({scrollTop: 0}, 500); // scroll to top with animation
+    });
+
+        
+
+    </script>
+
+</body>
+</html>
